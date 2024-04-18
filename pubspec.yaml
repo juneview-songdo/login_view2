@@ -1,7 +1,7 @@
 name: login_view2
-description: "Description here"
+description: "Login View2"
 #publish_to: 'none'
-#repository: https://github.com/melodysdreamj/juneflow
+repository: https://github.com/juneview-songdo/login_view2
 
 version: 1.0.0+1
 
