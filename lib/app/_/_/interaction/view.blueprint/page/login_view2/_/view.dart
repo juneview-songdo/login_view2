@@ -14,12 +14,6 @@ class NewView extends StatefulWidget {
 class NewViewState extends State<NewView> with StateMother {
   bool _showPassword = false;
 
-  void _toggleVisibility() {
-    setState(() {
-      _showPassword = !_showPassword;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,7 +86,9 @@ class NewViewState extends State<NewView> with StateMother {
                             vertical: 25.0, horizontal: 10.0),
                         suffixIcon: GestureDetector(
                           onTap: () {
-                            _toggleVisibility();
+                            setState(() {
+                              _showPassword = !_showPassword;
+                            });
                           },
                           child: Container(
                             height: 50,
